@@ -33,11 +33,11 @@ const HeroSection = () => {
         <div className={styles.image_hero}>
             <img src={hero} alt="" />
             <div>
-                <p>Space Walking</p>
-                <div className={styles.profile}>
-                    <img src={avatar} alt="" />
-                    <p>Animakid</p>
-                </div>
+                    <p>Space Walking</p>
+                    <div className={styles.profile}>
+                        <img src={avatar} alt="" />
+                        <p>Animakid</p>
+                    </div>
             </div>
         </div>
     </section>
