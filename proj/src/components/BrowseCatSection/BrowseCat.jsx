@@ -5,10 +5,12 @@ import {categories} from '../../data.js'
 const BrowseCat = () => {
     const cards = categories.map((item)=>
       <li key={Math.random}>
-        <img src={item.img} alt="" />
         <div>
-          <h6>{item.title}</h6>
+            <img src={item.img} className={styles.bg_pic} alt="" />
+            <img src={item.icon} className={styles.icon_pic} alt="" />
         </div>
+
+          <h6>{item.title}</h6>
       </li>)
     
       return (
