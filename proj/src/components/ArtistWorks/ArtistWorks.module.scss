@@ -1,0 +1,13 @@
+.nft_more{
+    width: 80%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+   
+    .bot{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
