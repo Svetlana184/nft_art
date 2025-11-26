@@ -1,0 +1,97 @@
+.art_sec{
+    width: 80%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .bg_pic{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+    .av_pic{
+        position: absolute;
+        z-index: 2;
+        left: 5%;
+        top: 40%;
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        img{
+            object-fit: cover;
+        }
+    }
+    .info_sec{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40%;
+        width: 90%;
+        .text_sec{
+            width: 60%;
+            height: 100%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p{
+                color: rgba(133, 133, 132, 1);
+                font-size: 22px;
+            }
+            h6{
+                font-size: 22px;
+            }
+            h4{
+                font-size: 51px;
+            }
+            .links{
+                width: 40%;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                width: 65%;
+                h6{
+                    font-size: 28px;
+                }
+                p{
+                    color: rgba(255, 255, 255, 1);
+                    font-size: 22px;
+                }
+            }
+        }
+        .btn_sec{
+            width: 25%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            .btn_id{
+                background-color: rgba(162, 89, 255, 1);
+                height: 60px;
+                width: 186px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+            }
+            .btn_follow{
+                background-color: rgba(162, 89, 255, 0);
+                border: 1px rgba(162, 89, 255, 1) solid;
+                height: 60px;
+                width: 145px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                color: white;
+            }
+        }
+    }
+}

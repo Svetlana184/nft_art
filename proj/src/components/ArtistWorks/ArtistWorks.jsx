@@ -22,7 +22,11 @@ const ArtistWorks = () => {
   })
   return(
     <section className={styles.nft_more}>
-     
+      <ul>
+        <li><button>Created</button></li>
+        <li><button>Owned</button></li>
+        <li><button>Collection</button></li>
+      </ul>
       <div className={styles.bot}>{cards}</div>
     </section>
     
