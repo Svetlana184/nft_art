@@ -1,5 +1,4 @@
 .create_acc{
-    margin-bottom: 5vh;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -7,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     img{
-        height: 100%;
+        width: 45%;
     }
     .create_acc_text{
         width: 50%;
@@ -26,7 +25,7 @@
         }
         button{
             background-color: rgba(162, 89, 255, 1);
-            width: 330px;
+            width: 350px;
             height: 46px;
             color: white;
             display: flex;
@@ -45,7 +44,7 @@
                 form{
                     input{
                         background-color: white;
-                        width: 330px;
+                        width: 350px;
                         height: 46px;
                         border-radius: 20px;
                     }

@@ -33,7 +33,9 @@ const Marketplace = () => {
                     <button>Collections</button>
           </div>
       </div>
-      <div className={styles.bot}>{cards}</div>
+      <div className={styles.bg}>
+        <div className={styles.bot}>{cards}</div>
+      </div>
     </section>
     
   )

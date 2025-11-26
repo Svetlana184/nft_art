@@ -7,7 +7,7 @@ import Card from "../Card/Card.jsx"
 const ArtistWorks = () => {
   const {id} = useParams();
   const cards = nfts.map((item) => {
-    const artist = artists.find(p => p.id === id)
+    const artist = artists.find(p => p.id == id)
     return (
       <Card 
         key={item.id}
@@ -22,12 +22,15 @@ const ArtistWorks = () => {
   })
   return(
     <section className={styles.nft_more}>
+      <div className={styles.create_line}></div>
       <ul>
         <li><button>Created</button></li>
         <li><button>Owned</button></li>
         <li><button>Collection</button></li>
       </ul>
-      <div className={styles.bot}>{cards}</div>
+      <div className={styles.bg}>
+        <div className={styles.bot}>{cards}</div>
+      </div>
     </section>
     
   )

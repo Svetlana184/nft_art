@@ -6,8 +6,9 @@ import Card from "../Card/Card.jsx"
 
 const NftMore = () => {
   const {id} = useParams();
+  const nftt = nfts.find(p=>p.id==id);
   const cards = nfts.map((item) => {
-    const artist = artists.find(p => p.id === id)
+    const artist = artists.find(p => p.id == nftt.author)
     return (
       <Card 
         key={item.id}
@@ -28,7 +29,9 @@ const NftMore = () => {
           Go To artist Page
         </button>
       </div>
-      <div className={styles.bot}>{cards}</div>
+      <div className={styles.bg}>
+        <div className={styles.bot}>{cards}</div>
+      </div>
     </section>
     
   )

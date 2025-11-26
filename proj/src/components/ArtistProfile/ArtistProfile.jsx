@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./ArtistProfile.module.scss"
-import {artists, nfts} from '../../data.js'
+import {artists} from '../../data.js'
 import { useParams } from "react-router-dom"
 import bg from '../../assets/bg_1.png'
 import ds from '../../assets/author_icons/DiscordLogo.svg'
