@@ -4,13 +4,14 @@ import ds from "../../assets/footer_ico/DiscordLogo.svg"
 import inst from "../../assets/footer_ico/InstagramLogo.svg"
 import tw from "../../assets/footer_ico/TwitterLogo.svg"
 import yo from "../../assets/footer_ico/YoutubeLogo.svg"
+import {Link}   from "react-router-dom"
 
 const Footer = () => {
   return (
     <footer className={styles.footer_nft}>
       <div className={styles.footer_top}>
           <div className={styles.first_column}>
-            <img src={logo} alt="" />
+            <Link to="/"><img src={logo} alt="" /></Link>
             <p>NFT marketplace UI created with Anima for Figma.</p>
             <p>Join our community</p>
             <ul>
@@ -24,9 +25,9 @@ const Footer = () => {
           <div className={styles.second_column}>
             <h4>Explore</h4>
               <ul>
-                <li><a href="">Marketplace</a></li>
-                <li><a href="">Rankings</a></li>
-                <li><a href="">Connect a wallet </a></li>
+                <li><Link to="/marketplace">Marketplace</Link></li>
+                <li><Link to="/rankings">Rankings</Link></li>
+                <li><Link to="/connect_wallet">Connect a wallet</Link></li>
               </ul>
           </div>
           

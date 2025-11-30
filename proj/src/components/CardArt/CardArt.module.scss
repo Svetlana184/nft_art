@@ -10,7 +10,11 @@
     justify-content: space-around;
     text-align: center;
     position: relative;
-    margin: 10px;
+    margin: 8px;
+    h4{
+        text-transform: capitalize;
+        text-decoration: none;
+    }
     div{
         display: flex;
         flex-direction: row;

@@ -1,8 +1,10 @@
 import React from 'react'
 import styles from "./Card.module.scss"
+import { Link } from 'react-router-dom'
 
-const Card = ({pic, title, avatar, name, price, bid}) => {
+const Card = ({id=1, pic, title, avatar, name, price, bid}) => {
   return (
+    <Link to={`/nft/${id}`}>
     <div className={styles.card}>
         <img src={pic} alt="" />
         <div>
@@ -27,6 +29,8 @@ const Card = ({pic, title, avatar, name, price, bid}) => {
         </div>
        
     </div>
+    </Link>
+    
   )
 }
 

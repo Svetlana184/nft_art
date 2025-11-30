@@ -24,8 +24,9 @@ function App() {
 
   return (
     <>
-      <Header/>
+      
       <BrowserRouter>
+      <Header/>
         <Routes>
           <Route path="/" element={
             <>
@@ -72,8 +73,9 @@ function App() {
             </>
           }/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
-      <Footer/>
+      
     </>
   )
 }

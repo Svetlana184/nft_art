@@ -18,6 +18,7 @@ const NftMore = () => {
         name={artist?.name} 
         price={item.price} 
         bid={item.bid}
+        id={item.id}
       />
     )
   })

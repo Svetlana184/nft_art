@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./DiscMore.module.scss"
 import {artists, nfts} from '../../data.js'
 import Card from "../Card/Card.jsx"
+import {Link}   from "react-router-dom"
 
 const DiscMore = () => {
   const cards = nfts.slice(0, 3).map((item) => { 
@@ -15,6 +16,7 @@ const DiscMore = () => {
         name={artist?.name} 
         price={item.price} 
         bid={item.bid}
+        id={item.id}
       />
     )
   })
@@ -27,7 +29,8 @@ const DiscMore = () => {
         </div>
         
         <button>
-          See All
+          <Link to="/marketplace">See All</Link>
+          
         </button>
       </div>
       <div className={styles.bot}>{cards}</div>
