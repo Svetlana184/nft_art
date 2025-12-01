@@ -21,11 +21,11 @@
         p{
             color: white;
             font-size: 22px;
-            width: 50%;
+            width: 70%;
         }
         button{
             background-color: rgba(162, 89, 255, 1);
-            width: 350px;
+            width: 450px;
             height: 46px;
             color: white;
             display: flex;
@@ -44,9 +44,12 @@
                 form{
                     input{
                         background-color: white;
-                        width: 350px;
+                        width: 450px;
                         height: 46px;
                         border-radius: 20px;
+                        input::placeholder {
+                            background: url("../../assets/btn_icons/Eye.svg") no-repeat;
+                        }
                     }
                 }
             }

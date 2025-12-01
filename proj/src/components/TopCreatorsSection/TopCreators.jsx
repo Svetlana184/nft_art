@@ -3,6 +3,7 @@ import styles from "./TopCreators.module.scss"
 import {artists} from "../../data.js"
 import CardArt from "../CardArt/CardArt.jsx"
 import {Link}   from "react-router-dom"
+import rocket from '../../assets/btn_icons/RocketLaunchPurple.svg'
 
 const TopCreators = () => {
   const art_cards = artists.map((itm)=> <CardArt key={itm.id} id={itm.id} pic={itm.pic} name={itm.name} price={itm.nft_sold}/>)
@@ -15,6 +16,7 @@ const TopCreators = () => {
                   </div>
                   
                   <button>
+                    <img src={rocket} alt="" />
                     <Link to="/rankings">View Rankings</Link>
                   </button>
           </div>

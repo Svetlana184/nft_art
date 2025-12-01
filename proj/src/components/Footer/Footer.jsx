@@ -35,7 +35,7 @@ const Footer = () => {
               <h4>Join our weekly digest</h4>
               <p>Get exclusive promotions & updates straight to your inbox.</p>
                <form className={styles.form_sub}>
-                      <input type="text" placeholder='Enter your email here'/>
+                      <input type="text" placeholder='  Enter your email here'/>
                       <button>Subscribe</button>
                 </form>
           </div>

@@ -28,11 +28,17 @@
             border-radius: 25px;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
             p{
                 font-size: 16px;
                 color: white;
+                text-decoration: none;
+            }
+            img{
+                height: 20px;
+                width: 20px;
+                margin-right: 10px;
             }
         }
         ul{

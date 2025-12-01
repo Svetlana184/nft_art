@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./MagicMushrooms.module.scss"
 import {artists, nfts} from '../../data.js'
+import eye from '../../assets/btn_icons/Eye.svg'
 
 const MagicMushrooms = () => {
   const artist = artists[6];
@@ -15,6 +16,7 @@ const MagicMushrooms = () => {
         </button>
         <h3>{nft.title}</h3>
         <button>
+          <img src={eye} alt="" />
           <p>See NFT</p>
         </button>
       </div>

@@ -4,7 +4,7 @@
     background-color: rgba(59, 59, 59, 1);
     border-radius: 40px;
     margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,5 +25,45 @@
     }
     img{
         height: 70%;
+    }
+}
+
+.form_sub{
+    width: 420px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    input{
+        background-color: white;
+        width: 420px;
+        height: 60px;
+        position: relative;
+        z-index: 1;
+        border-radius: 20px;
+        border: none;
+    }
+    button{
+        background-color: rgba(162, 89, 255, 1);
+        position: absolute;
+        right: 0;
+        width: 179px;
+        height: 60px;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+        }
+        p{
+            font-size: 16px;
+        }
     }
 }

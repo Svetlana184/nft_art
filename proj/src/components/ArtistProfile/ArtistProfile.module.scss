@@ -9,7 +9,7 @@
     .bg_pic{
         position: relative;
         z-index: 1;
-        width: 100%;
+        
     }
     .av_pic{
         position: absolute;
@@ -81,6 +81,11 @@
                 align-items: center;
                 border-radius: 20px;
                 border: none;
+                img{
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 10px;
+                }
             }
             .btn_follow{
                 background-color: rgba(162, 89, 255, 0);
@@ -92,6 +97,11 @@
                 align-items: center;
                 border-radius: 20px;
                 color: white;
+                img{
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 10px;
+                }
             }
         }
     }

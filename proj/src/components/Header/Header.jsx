@@ -11,10 +11,12 @@ const Header = () => {
             <li><Link to="/marketplace">Marketplace</Link></li>
             <li><Link to="/rankings">Rankings</Link></li>
             <li><Link to="/connect_wallet">Connect a wallet</Link></li>
-            <button>
-                <img src={user} alt="" />
-                <p>Sign Up</p>
-            </button>
+            <Link to="/create_account">
+              <button>
+                  <img src={user} alt="" />
+                  <p>Sign Up</p>
+              </button>
+            </Link>
         </ul>
     </header>
   )

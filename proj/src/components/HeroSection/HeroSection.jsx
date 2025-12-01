@@ -2,6 +2,7 @@ import styles from "./HeroSection.module.scss"
 import avatar from "../../assets/Avatar.png"
 import hero from "../../assets/Hero_img.png"
 import rocket from "../../assets/RocketLaunch.svg"
+import {Link}   from "react-router-dom"
 
 const HeroSection = () => {
   return (
@@ -11,10 +12,12 @@ const HeroSection = () => {
             <p>
                 NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.
             </p>
-            <button>
-                <img src={rocket} alt="" />
-                <p>Get Started</p>
-            </button>
+            <Link to='/create_account'>
+                <button>
+                    <img src={rocket} alt="" />
+                    <p>Get Started</p>
+                </button>
+            </Link>
             <ul>
                 <li>
                     <h6>240k+ </h6>

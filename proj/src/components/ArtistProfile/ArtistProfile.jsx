@@ -8,6 +8,8 @@ import gl from '../../assets/author_icons/Globe.svg'
 import inst from '../../assets/author_icons/InstagramLogo.svg'
 import tw from '../../assets/author_icons/TwitterLogo.svg'
 import yt from '../../assets/author_icons/YoutubeLogo.svg'
+import copy from '../../assets/btn_icons/Copy.svg'
+import plus from '../../assets/btn_icons/Plus.svg'
 
 
 const ArtistProfile = () => {
@@ -52,8 +54,14 @@ const ArtistProfile = () => {
           </div>
         </div>
         <div className={styles.btn_sec}>
-          <button className={styles.btn_id}>{id}</button>
-          <button className={styles.btn_follow}>Follow</button>
+          <button className={styles.btn_id}>
+            <img src={copy} alt="" />
+            <p>{id}</p>
+            </button>
+          <button className={styles.btn_follow}>
+            <img src={plus} alt="" />
+            <p>Follow</p>
+            </button>
         </div>
       </div>
     </section>
