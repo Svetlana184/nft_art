@@ -2,10 +2,10 @@ import React from 'react'
 import styles from "./Card.module.scss"
 import { Link } from 'react-router-dom'
 
-const Card = ({id=1, pic, title, avatar, name, price, bid}) => {
+const Card = ({id=1, pic, title, avatar, name, price, bid, color='grey'}) => {
   return (
     <Link to={`/nft/${id}`}>
-    <div className={styles.card}>
+    <div className={color=='grey' ? styles.card_black : styles.card}>
         <img src={pic} alt="" />
         <div>
              <div className={styles.auth}>

@@ -18,6 +18,7 @@ const DiscMore = () => {
         price={item.price} 
         bid={item.bid}
         id={item.id}
+        color='black'
       />
     )
   })

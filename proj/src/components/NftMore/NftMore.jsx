@@ -20,6 +20,7 @@ const NftMore = () => {
         price={item.price} 
         bid={item.bid}
         id={item.id}
+        color='black'
       />
     )
   })
