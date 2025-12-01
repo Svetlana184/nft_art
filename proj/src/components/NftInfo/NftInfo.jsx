@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./NftInfo.module.scss"
 import { useParams } from "react-router-dom"
 import {artists, nfts} from '../../data.js'
+import bigNft from '../../assets/nftBig.png'
 
 const NftInfo = () => {
   const {id} = useParams();
@@ -10,7 +11,7 @@ const NftInfo = () => {
   const tags = nft.tags.map((item)=><li>{item}</li>)
   return (
     <section className={styles.nft_sec}>
-      <img className={styles.nft_bg} src={nft.pic} alt="" />
+      <img className={styles.nft_bg} src={bigNft} alt="" />
       <div className={styles.nft_text}>
         <div className={styles.left}>
           <div>
